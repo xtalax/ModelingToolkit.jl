@@ -36,7 +36,7 @@ struct OptimizationSystem <: AbstractTimeIndependentSystem
     The default values to use when initial guess and/or
     parameters are not supplied in `OptimizationProblem`.
     """
-    defaults::Dict
+    defaults::Dic t
     """
     metadata: metadata for the system, to be used by downstream packages.
     """
@@ -143,7 +143,7 @@ namespace_constraint(eq::Equation, sys) = namespace_equation(eq, sys)
 #     _lhs = namespace_expr(ineq.lhs, sys, n)
 #     _rhs = namespace_expr(ineq.rhs, sys, n)
 #     Inequality(
-#         namespace_expr(_lhs, sys, n), 
+#         namespace_expr(_lhs, sys, n),
 #         namespace_expr(_rhs, sys, n),
 #         ineq.relational_op,
 #     )
