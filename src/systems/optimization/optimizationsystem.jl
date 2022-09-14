@@ -36,7 +36,7 @@ struct OptimizationSystem <: AbstractTimeIndependentSystem
     The default values to use when initial guess and/or
     parameters are not supplied in `OptimizationProblem`.
     """
-    defaults::Dic t
+    defaults::Dict
     """
     metadata: metadata for the system, to be used by downstream packages.
     """
