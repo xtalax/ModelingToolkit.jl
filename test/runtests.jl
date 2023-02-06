@@ -48,5 +48,6 @@ println("Last test requires gcc available in the path!")
 @safetestset "OptimizationSystem Test" begin include("optimizationsystem.jl") end
 @safetestset "FuncAffect Test" begin include("funcaffect.jl") end
 @safetestset "Constants Test" begin include("constants.jl") end
+@safetestset "Problem interface Test" begin include("problem_interface.jl") end
 # Reference tests go Last
 @safetestset "Latexify recipes Test" begin include("latexify.jl") end
